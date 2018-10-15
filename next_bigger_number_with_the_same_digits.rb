@@ -17,7 +17,6 @@ def next_bigger(n)
   while desc_end_sect[index_of_pivot + i] == split_digits[pivot]
     i += 1
   end
-  next_num_to_pivot = desc_end_sect[index_of_pivot + i]
   
   (split_digits[0...pivot] + [desc_end_sect.delete_at(index_of_pivot + i)]  + desc_end_sect).join.to_i
 end
